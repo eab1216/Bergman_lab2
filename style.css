@@ -1,0 +1,135 @@
+*{ margin: 0; padding:0, box-sizing:border-box; }
+body{
+	background-color:white;
+	color:black;
+	font-size:20px;
+	font-family:Arial,sans-serif; 
+	text-align:center;
+	}	
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	padding:5px;
+	margin: 0px auto 0px auto;
+	border-top: 2px dotted black;
+	border-bottom: 2px dotted black;
+}
+
+nav a{
+	font-size:28px;
+	font-family: verdana, sans-serif;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	margin: 0px auto 0px auto; 
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+a{
+	color: inherit;
+	}
+h1,h3{
+	font-family:"courier new", courier,serif;
+	font-weight:lighter;
+	padding-top: 5%;
+}
+h3{
+	text-transform: uppercase;
+	font-style: italic;
+
+}
+header{
+	padding-top: 4.0em;
+    padding-bottom: .5em;
+    font-size: 14px;
+    font-family:Helvetica, sans-serif;
+    font-style:italic;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+a:hover{
+	color:white;
+	background-color:transparent;
+}
+
+#herocali{
+background-image: url('images/cali_walk2.png');
+background-size:cover;
+background-attachment: fixed;
+height: 100%;
+}
+
+#heronyc{
+background-image: url('images/nyc_walk2.png');
+background-size:cover;
+background-attachment: fixed;
+height: 100%;
+}
+#herogp{
+background-image: url('images/gp_walk2.png');
+background-size:cover;
+background-attachment: fixed;
+height:100%;
+}
+.floating-box{
+	display:inline-block;
+	width:250px;
+	height:250px;
+	margin:5%;
+	border:5px none;
+	border-radius: 40px
+}
+
+.after-box{
+border:3px solid black;
+}
+@media(max-width:1150px){
+	nav a{ 
+		padding:2em;
+		}
+		h1{
+			font-size:30px;
+			padding-bottom:inherit;
+		}
+		header{
+			font-size:16px;
+			letter-spacing:0.3em; 
+		}
+	}
+@media(max-width:950px){
+	nav a{
+		font-size:24px; 
+		padding:1.75em;
+	}
+	header{
+		font-size:14px;
+		letter-spacing:0.3em; 
+	}
+}
+
+@media(max-width:720px){
+	nav a{
+	font-size:18px; 
+	padding:2em;
+	}
+	h1{
+		font-size:22px;
+		padding-bottom:inherit;
+	}
+	header{
+		display:none;
+	}
+}
+@media(max-width:600px){
+	nav a{
+		font-size:14px;
+		padding:1.25em;
+	}
+	h1{
+		font-size:18px; 
+	}
+}
